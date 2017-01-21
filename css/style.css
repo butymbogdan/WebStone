@@ -1,0 +1,220 @@
+a {
+    color: #fff;
+    font-size: 14px;
+}
+a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+.header {
+    background: url("../img/bg_header.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+.header::before {
+    content: '';
+    background-color: #000;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.navbar-default {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    padding-top: 70px;
+}
+.navbar-default .navbar-brand {
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 45px;
+    padding: 15px;
+    display: block;
+    height: auto;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 28px;
+    color: #fff;
+    font-weight: normal;
+}
+.logo-box {
+    position: relative;
+    text-align: center;
+    margin-top: 85px;
+}
+.logo-box .glyphicon:nth-child(1), .logo-box .glyphicon:nth-child(5) {
+    font-size: 20px;
+}
+.logo-box .glyphicon:nth-child(2), .logo-box .glyphicon:nth-child(4) {
+    font-size: 25px;
+}
+.logo-box .glyphicon:nth-child(3){
+    font-size: 30px;
+}
+.logo-box h1 {
+    font-size: 80px;
+}
+.logo-box h3 {
+    font-size: 23px;
+    font-weight: normal;
+}
+.logo-box h1, .logo-box h3 {
+    margin: 0;
+    line-height: 1;
+}
+.logo-box h1 span {
+    color: #ff6751;
+}
+.feedback {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    padding: 8px 42px;
+}
+.feedback:hover {
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    text-decoration: none;
+}
+.btn-down {
+     text-decoration: none;
+     position: absolute;
+     bottom: 15px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+.btn-down:hover, .btn-down:focus, .btn-down:active {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-down .glyphicon {
+    display: block;
+}
+.btn-down .glyphicon:nth-child(2) {
+    opacity: .7;
+}
+.btn-down .glyphicon:nth-child(3) {
+    opacity: .5;
+}
+.main-sect {
+    overflow: hidden;
+}
+.main-sect > h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.item-wrap {
+    position: relative;
+    border-left: 1px solid #ccc;
+    padding-top: 330px;
+    text-align: center;
+}
+.item-wrap:nth-child(3) {
+    border-right: 1px solid #ccc;
+}
+.item-wrap::before {
+    content: '';
+    background: url("../img/sprite.png") no-repeat;
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    height: 253px;
+    top: 0;
+    left: 0;
+}
+.item-wrap:nth-child(2)::before {
+    background-position: center -254px;
+}
+.item-wrap:nth-child(3)::before {
+    background-position: center -507px;
+}
+.slider-sect {
+    //height: 500px;
+    background: #ccc;
+}
+.slide-8 {
+    height: 350px;
+    padding: 0;
+}
+.slide-4 {
+    height: 700px;
+    padding: 0;
+}
+.slide-8 a, .slide-4 a {
+    display: block;
+    height: 100%;
+}
+.slide-8 a img, .slide-4 a img{
+    width: 100%;
+    height: 100%;
+}
+.contact-sect {
+    background: #ff6f42 url("../img/bg-contact.png") no-repeat 85% 100%;
+}
+.contact-sect .form-control {
+    background-color: #ea5e3d;
+    border: none;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    -moz-box-shadow: 0 7px 16px #211D1D;
+    -webkit-box-shadow: 0 7px 16px #211D1D;
+    box-shadow: 0 7px 16px #211D1D;
+}
+.contact-sect .control-label {
+    font-size: 30px;
+    white-space: nowrap;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.social {
+    text-align: center;
+    margin: 50px 0;
+}
+.social li {
+    display: inline-block;
+    margin: 0 30px;
+}
+.social a {
+    background:url("../img/social-sprite.png") no-repeat;
+    color: #000;;
+    display: block;
+    width: 42px;
+    height: 42px;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.social li:nth-child(2) a {
+    background-position: 0 -42px;
+}
+.social li:nth-child(3) a {
+    background-position: 0 -84px;
+}
+.social a:hover{
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
